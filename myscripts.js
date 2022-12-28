@@ -20,11 +20,18 @@ const chosenExperssion =(exp)=>{
 const sumExpression = (num1, num2) => {
     return num1 + num2
 }
+const subExpression=(num1, num2)=>{
+    return num1 - num2;
+}
 const equals =()=>{
     switch(currentExpression) {
         case 'add':
             {var finalSum = sumExpression(Number((userNumber.join(''))), Number((userNumber2.join(''))))};
             document.getElementById('display3').innerHTML = finalSum;
+            break;
+        case 'subtract':
+            {var finalSub = subExpression(Number((userNumber.join(''))), Number((userNumber2.join(''))))}
+            document.getElementById('display3').innerHTML = finalSub;
             break;
     }
 }
