@@ -23,6 +23,12 @@ const sumExpression = (num1, num2) => {
 const subExpression=(num1, num2)=>{
     return num1 - num2;
 }
+const mulExpression =(num1, num2)=>{
+    return num1 * num2;
+}
+const divExpression =(num1, num2)=>{
+    return num1 / num2;
+}
 const equals =()=>{
     switch(currentExpression) {
         case 'add':
@@ -32,6 +38,14 @@ const equals =()=>{
         case 'subtract':
             {var finalSub = subExpression(Number((userNumber.join(''))), Number((userNumber2.join(''))))}
             document.getElementById('display3').innerHTML = finalSub;
+            break;
+        case 'multiply':
+            {var finalMul = mulExpression(Number((userNumber.join(''))), Number((userNumber2.join(''))))};
+            document.getElementById('display3').innerHTML = finalMul;
+            break;
+        case 'divide':
+            {var finaldiv = divExpression(Number((userNumber.join(''))), Number((userNumber2.join(''))))};
+            document.getElementById('display3').innerHTML = finaldiv;
             break;
     }
 }
