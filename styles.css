@@ -5,7 +5,8 @@ h1 {
     border-style: solid;
     border-color: black;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 40px;
     margin: auto;
     padding: 25px;
     width: 500px;
@@ -13,10 +14,12 @@ h1 {
 #screen {
     text-align: center;
     font-size: 30px;
+    border: 100px;
 }
 button {
-    width: 30%;
-    transition: all 0.3s ease-in-out;
+    width: 32%;
+    height: 60px;
+    transition: 0.2s;
     background-color: white;
     border-radius: 4px;
     text-align: center;
