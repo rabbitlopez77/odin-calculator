@@ -4,12 +4,14 @@ let userStart = true;
 const displayNumber=(num)=>{
     if(userStart){
         userNumber += num
+        document.getElementById('display3').innerHTML = 0;
         document.getElementById("display1").innerHTML = userNumber;
         return userNumber
 
     }else if(!userStart)
     {
         userNumber2 += num;
+        document.getElementById('display3').innerHTML = 0;
         document.getElementById("display2").innerHTML = userNumber2;
         return userNumber2
     }
