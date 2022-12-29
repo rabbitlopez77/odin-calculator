@@ -131,3 +131,48 @@ const backspace =()=>{
     }
         
 }
+const numPadKey =(event)=>{
+    var name = event.key;
+    var code = event.code;
+    switch(code) {
+        case 'Digit1': {
+            alert(1)
+        }
+    }
+}
+document.addEventListener('keypress', (event) => {
+    var name = event.key;
+    var code = event.code;
+    switch(code) {
+        case 'Digit1':
+            displayNumber(1);
+            break;
+        case 'Digit2':
+            displayNumber(2)
+            break;
+        case 'Digit3':
+            displayNumber(3);
+            break;
+        case 'Digit4':
+            displayNumber(4);
+            break;
+        case 'Digit5':
+            displayNumber(5);
+            break;
+        case 'Digit6':
+            displayNumber(6);
+            break;
+        case 'Digit7':
+            displayNumber(7);
+            break;
+        case 'Digit8':
+            displayNumber(8);
+            break;
+        case 'Digit9':
+            displayNumber(9);
+            break;
+        case 'Digit0':
+        displayNumber(0);
+            break;
+    }
+  }), false;
