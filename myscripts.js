@@ -83,10 +83,6 @@ const equals =()=>{
             break;
     }
 }
-
-
-
-
 const changeCalColor = (exp) => {
     switch(exp) {
         case 'add': 

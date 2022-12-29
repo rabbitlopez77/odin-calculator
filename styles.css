@@ -14,7 +14,12 @@ h1 {
 #screen {
     text-align: center;
     font-size: 30px;
-    border: 100px;
+    background-color: rgb(163, 156, 156);
+    
+}
+#display1{
+    border-color: black;
+    border-style: solid;
 }
 button {
     width: 32%;
